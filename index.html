@@ -4,14 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Scheunenrave – Winter Edition</title>
-  <meta name="description" content="Scheunenrave Winter Edition – 28.11. ab 17 Uhr, Scheune Niedersolbach 2, 51598 Friesenhagen">
+  <meta name="description" content="Scheunenrave Winter Edition – 28.11. ab 17 Uhr, Scheune, 51598 Friesenhagen">
   <meta property="og:title" content="Scheunenrave – Winter Edition">
-  <meta property="og:description" content="28.11. – 17 Uhr · Scheune, Niedersolbach 2, 51598 Friesenhagen">
+  <meta property="og:description" content="28.11. – 17 Uhr · Scheune, 51598 Friesenhagen">
   <meta property="og:image" content="thumbnail.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
   <style>
+    /* Lokale Kopie der Schrift (optional: Datei Bangers-Regular.ttf ins Repo legen) */
+    @font-face {
+      font-family: 'Bangers Local';
+      src: url('Bangers-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-display: swap;
+    }
     :root {
       --ice: #c4e8ff;
       --navy: #29364f;
@@ -27,7 +34,7 @@
       background: linear-gradient(45deg, var(--orange) 0%, #8a6a75 22%, var(--navy) 50%, var(--navy) 100%);
       background-attachment: fixed;
       color: var(--ice);
-      font-family: 'Bangers', Impact, sans-serif;
+      font-family: 'Bangers', 'Bangers Local', Impact, sans-serif;
       font-size: var(--u);
       text-align: center;
       display: flex;
@@ -150,7 +157,6 @@
     <p class="info">
       28.11 - 17 Uhr<br>
       Scheune<br>
-      Niedersolbach 2<br>
       51598 Friesenhagen
     </p>
 
